@@ -13,3 +13,6 @@ Note:
 # Operating Systems
 
 `os` module features examples operating systems calls.
+
+Note:
+> For win_debugging.py, install `winappdbg`

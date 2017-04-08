@@ -1,7 +1,11 @@
+# DES - Data Encryption Standard (Symmetric Key)
 from Crypto.Cipher import DES
 from Crypto import Random
 
+# Initialization Vector (8 bytes)
 init_vector = Random.new().read(DES.block_size)
+
+# Output Feedback Mode (1 of 5 available)
 mode = DES.MODE_OFB
 
 
@@ -16,7 +20,7 @@ def des_decrypt(key, ciphertext):
 
 
 def main():
-    key = b'8bit key'
+    key = b'8byt key'  # 64-bit key (8 bytes)
     plaintext = "sona si latine loqueris "
 
     ciphertext = des_encrypt(key, plaintext)

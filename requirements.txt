@@ -2,3 +2,4 @@ pcapy
 scapy-python3
 pyfuzz
 pillow
+pycrypto
